@@ -58,7 +58,7 @@ services:
       - elasticsearch
 
   redis:
-    build: redis/
+    image: redis:3
     container_name: redis
     volumes:
       - /usr/share/redis/data:/data
