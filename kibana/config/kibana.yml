@@ -5,7 +5,7 @@
 server.name: kibana
 server.host: "0"
 elasticsearch.url: http://192.168.100.194:9200
-elasticsearch.username: elastic
+elasticsearch.username: kibana
 elasticsearch.password: changeme
 
 ## Disable X-Pack
