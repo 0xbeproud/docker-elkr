@@ -25,3 +25,10 @@ xpack.ml.enabled: false
 xpack.graph.enabled: false
 xpack.watcher.enabled: false
 
+# Enabling Anonymous Access
+# https://www.elastic.co/guide/en/x-pack/5.0/anonymous-access.html
+xpack.security.authc:
+  anonymous:
+    username: anonymous_user
+    roles: role1, role2
+    authz_exception: true
