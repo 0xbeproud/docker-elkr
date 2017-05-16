@@ -32,7 +32,7 @@ services:
     build: logstash/
     container_name: logstash-redis
     volumes:
-      - ./logstash/config:/etc/logstash/
+      - ./logstash/config:/usr/share/logstash/config
       - ./logstash/pipeline:/usr/share/logstash/pipeline
     ports:
       - "5000:5000"
