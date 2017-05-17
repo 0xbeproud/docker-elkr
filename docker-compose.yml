@@ -23,7 +23,7 @@ services:
     ports:
       - "5000:5000"
     environment:
-      LS_JAVA_OPTS: "-Xms2g -Xmx2g"
+      LS_JAVA_OPTS: "-Xms1g -Xmx1g"
     networks:
       - elkr
     depends_on:
