@@ -3,6 +3,7 @@ version: '2'
 services:
   elasticsearch:
     build: elasticsearch/
+    container_name: elasticsearch
     volumes:
       - ./elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml
     ports:
@@ -15,6 +16,7 @@ services:
 
   logstash:
     build: logstash/
+    container_name: logstash
     volumes:
       - ./logstash/config/logstash.yml:/usr/share/logstash/config/logstash.yml
       - ./logstash/pipeline:/usr/share/logstash/pipeline
@@ -29,6 +31,7 @@ services:
 
   kibana:
     build: kibana/
+    container_name: kibana
     volumes:
       - ./kibana/config/:/usr/share/kibana/config
     ports:
