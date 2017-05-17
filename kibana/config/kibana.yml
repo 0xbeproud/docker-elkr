@@ -4,9 +4,7 @@
 #
 server.name: kibana
 server.host: "0"
-elasticsearch.url: http://192.168.100.194:9200
-elasticsearch.username: kibana
-elasticsearch.password: changeme
+elasticsearch.url: http://elasticsearch:9200
 
 ## Disable X-Pack
 ## see https://www.elastic.co/guide/en/x-pack/current/xpack-settings.html
