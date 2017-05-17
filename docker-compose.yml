@@ -5,8 +5,6 @@ services:
     build: elasticsearch/
     container_name: elasticsearch
     volumes:
-#      - ./elasticsearch/config:/usr/share/elasticsearch/config/
-#      - ./elasticsearch/config:/etc/elasticsearch/config
       - es-data:/usr/share/elasticsearch/data
     ports:
       - "9200:9200"
@@ -32,7 +30,6 @@ services:
     build: logstash/
     container_name: logstash-redis
     volumes:
-      - ./logstash/config:/usr/share/logstash/config
       - ./logstash/pipeline:/usr/share/logstash/pipeline
     ports:
       - "5000:5000"
